@@ -1341,4 +1341,7 @@ footer {
   .info-grid          { grid-template-columns: 1fr; }
   .footer-inner       { flex-direction: column; text-align: center; }
   .hero-contacts      { flex-direction: column; gap: 10px; }
+  #whatsapp-btn       { bottom: 20px; left: 16px; width: 42px; height: 42px; font-size: 1.25rem; }
+  #back-top           { bottom: 20px; right: 16px; width: 42px; height: 42px; font-size: 0.95rem; }
+  .whatsapp-tooltip   { display: none; }
 }
