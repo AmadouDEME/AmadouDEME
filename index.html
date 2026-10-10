@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Amadou DEME – Développeur Full Stack | Big Data & Data Science
+    </title>
+    <meta
+      name="description"
+      content="Portfolio d'Amadou DEME, Développeur Full Stack en recherche d'alternance. Spécialiste React.js, NestJS, Laravel, Python, Big Data. Basé à Sousse, Tunisie." />
+    <meta name="author" content="Amadou DEME" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <!-- ===== LOADER ===== -->
+    <div id="page-loader">
+      <div class="loader-ring"></div>
+    </div>
+
+    <!-- ===== FOND ANIMÉ ===== -->
+    <div class="bg-grid"></div>
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+    <div class="particles"></div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav>
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">AD.</a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#education">Formation</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+
+        <div
+          class="hamburger"
+          id="hamburger"
+          aria-label="Menu"
+          role="button"
+          tabindex="0">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <!-- Contenu gauche -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="pulse-dot"></span>
+              En recherche d'alternance
+            </div>
+
+            <h1 class="hero-title">
+              Bonjour, je suis
+              <span class="gradient-name">Amadou DEME</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              <span id="typed-text" class="typed-text"></span
+              ><span class="cursor"></span>
+            </p>
+
+            <div class="hero-alternance">
+              <i class="fas fa-search"></i>
+              Master 1 Big Data &amp; Data Science | Développeur Full Stack
+            </div>
+
+            <p class="hero-desc">
+              Actuellement étudiant en Master Big Data &amp; Data Science, fort
+              d'un parcours en développement Web &amp; Mobile. Je combine
+              compétences techniques solides et passion pour la gestion de
+              projet et l'analyse de données.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <i class="fas fa-rocket"></i>
+                Voir mes projets
+              </a>
+              <a href="CV Amadou_DEME.pdf" download class="btn btn-outline">
+                <i class="fas fa-download"></i>
+                Télécharger CV
+              </a>
+            </div>
+
+            <div class="hero-contacts">
+              <div class="hero-contact-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+221777880618">+216-50-371-287</a>
+              </div>
+              <div class="hero-contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:demea2682@gmail.com">demea2682@gmail.com</a>
+              </div>
+              <div class="hero-contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Sousse, Tunisie</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo droite -->
+          <div class="hero-visual">
+            <div class="photo-container">
+              <div class="photo-glow"></div>
+              <div class="photo-frame">
+                <div class="photo-frame-inner">
+                  <img
+                    src="assets/profil.jpeg"
+                    alt="Photo de profil – Amadou DEME" />
+                </div>
+              </div>
+
+              <!-- Cards flottantes -->
+              <div class="float-card float-top">
+                <div class="float-card-icon"><i class="fas fa-code"></i></div>
+                <div>
+                  <div class="float-card-title">Full Stack Dev</div>
+                  <div class="float-card-sub">React · Next.js · NestJS</div>
+                </div>
+              </div>
+
+              <div class="float-card float-bottom">
+                <div class="float-card-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div>
+                  <div class="float-card-title">Big Data & Data Science</div>
+                  <div class="float-card-sub">
+                    Python · MySQL · Statistiques
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+          <span>Scroll</span>
+          <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== À PROPOS ===== -->
+    <section id="about">
+      <div class="container">
+        <div class="about-inner">
+          <!-- Image -->
+          <div class="about-img-wrap reveal-l">
+            <div class="about-img-frame">
+              <img src="assets/profil.jpeg" alt="Amadou DEME" />
+            </div>
+            <div class="about-deco"></div>
+            <div class="about-deco2"></div>
+          </div>
+
+          <!-- Texte -->
+          <div class="about-text reveal-r">
+            <div class="section-tag">À propos</div>
+            <h2>Développeur passionné,<br />rigoureux et orienté solutions</h2>
+
+            <p>
+              Actuellement étudiant en Master Big Data &amp; Data Science et
+              fort d'un parcours en développement Web &amp; Mobile, je combine
+              des compétences techniques solides et une passion pour la gestion
+              de projet et l'analyse de données.
+            </p>
+            <p>
+              En tant que
+              <strong>Fondateur &amp; Lead Développeur de JANG HUB TECH</strong
+              >, je dirige une équipe technique tout en développant des
+              solutions innovantes. Je recherche activement une
+              <strong>opportunité en alternance</strong>
+              pour mettre ma polyvalence au service d'une équipe dynamique.
+            </p>
+
+            <div class="info-grid">
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <strong>Localisation</strong><span>Sousse, Tunisie</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <strong>Téléphone</strong><span>+216-50-371-287</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <strong>Email</strong><span>demea2682@gmail.com</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                  <strong>Formation</strong
+                  ><span>Master 1 Big Data & Data Science</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-briefcase"></i>
+                <div>
+                  <strong>Statut</strong><span>Recherche alternance</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-language"></i>
+                <div>
+                  <strong>Langues</strong
+                  ><span>Français (Courant) · Anglais (Notion)</span>
+                </div>
+              </div>
+            </div>
+
+            <a href="CV Amadou_DEME.pdf" download class="btn btn-primary">
+              <i class="fas fa-file-pdf"></i>
+              Télécharger mon CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPÉTENCES ===== -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">Stack technique</div>
+          <h2 class="section-title">Mes <span>Compétences</span></h2>
+          <p class="section-desc">
+            Un ensemble de technologies couvrant le front-end, le back-end, la
+            data, le DevOps et la gestion de projet.
+          </p>
+        </div>
+
+        <!-- Rempli dynamiquement par js/main.js -->
+        <div class="skills-grid" id="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===== EXPÉRIENCES ===== -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">Parcours professionnel</div>
+          <h2 class="section-title">Mes <span>Expériences</span></h2>
+          <p class="section-desc">
+            Des collaborations enrichissantes avec des entreprises variées, du
+            Sénégal à l'international.
+          </p>
+        </div>
+
+        <!-- Rempli dynamiquement par js/main.js -->
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- ===== FORMATIONS ===== -->
+    <section id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">Formations & Diplômes</div>
+          <h2 class="section-title">Mon <span>Parcours Académique</span></h2>
+          <p class="section-desc">
+            Du baccalauréat scientifique au Master Big Data, en passant par des
+            certifications reconnues.
+          </p>
+        </div>
+
+        <!-- Rempli dynamiquement par js/main.js -->
+        <div class="edu-grid" id="edu-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETS ===== -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">Réalisations</div>
+          <h2 class="section-title">Mes <span>Projets</span></h2>
+          <p class="section-desc">
+            Une sélection de projets développés lors de mes expériences
+            professionnelles et personnelles.
+          </p>
+        </div>
+
+        <!-- Rempli dynamiquement par js/main.js -->
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===== LANGUES ===== -->
+    <section id="languages">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">Langues</div>
+          <h2 class="section-title">
+            Connaissance en <span>Linguistique</span>
+          </h2>
+        </div>
+
+        <!-- Rempli dynamiquement par js/main.js -->
+        <div class="lang-cards" id="lang-cards"></div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">Contact</div>
+          <h2 class="section-title">Travaillons <span>Ensemble</span></h2>
+          <p class="section-desc">
+            Une idée de projet ou une opportunité d'alternance ? N'hésitez pas,
+            je réponds sous 24h.
+          </p>
+        </div>
+
+        <div class="contact-inner">
+          <!-- Infos -->
+          <div class="contact-left reveal-l">
+            <h3>Parlons de votre projet</h3>
+            <p>
+              Je suis disponible pour des
+              <strong>missions en alternance</strong>, des stages ou des projets
+              freelance. Basé à Dakar, je peux aussi travailler à distance.
+            </p>
+
+            <div class="contact-list">
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-item-text">
+                  <strong>Téléphone</strong>
+                  <a href="tel:+221777880618">+216-50-371-287</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-item-text">
+                  <strong>Email</strong>
+                  <a href="mailto:demea2682@gmail.com">demea2682@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-item-text">
+                  <strong>Localisation</strong>
+                  <span>Sousse, Tunisie</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="contact-item-text">
+                  <strong>LinkedIn</strong>
+                  <a
+                    href="https://linkedin.com/in/amadou-deme-8a7286324"
+                    target="_blank"
+                    rel="noopener"
+                    >linkedin.com/in/amadou-deme-8a7286324</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="contact-item-text">
+                  <strong>GitHub</strong>
+                  <a
+                    href="https://github.com/AmadouDEME"
+                    target="_blank"
+                    rel="noopener"
+                    >github.com/amadou-deme</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulaire -->
+          <div class="contact-form reveal-r">
+            <h4>
+              <i
+                class="fas fa-paper-plane"
+                style="color: var(--primary); margin-right: 10px"></i
+              >Envoyer un message
+            </h4>
+
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="f-name">Votre nom</label>
+                  <input
+                    type="text"
+                    id="f-name"
+                    name="name"
+                    placeholder="Pii Uzumaki"
+                    required />
+                </div>
+                <div class="form-group">
+                  <label for="f-email">Votre email</label>
+                  <input
+                    type="email"
+                    id="f-email"
+                    name="email"
+                    placeholder="PiiUzumaki@exemple.com"
+                    required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="f-subject">Sujet</label>
+                <input
+                  type="text"
+                  id="f-subject"
+                  name="subject"
+                  placeholder="Proposition d'alternance / Collaboration..."
+                  required />
+              </div>
+              <div class="form-group">
+                <label for="f-message">Message</label>
+                <textarea
+                  id="f-message"
+                  name="message"
+                  placeholder="Décrivez votre projet, votre offre ou votre besoin..."
+                  required></textarea>
+              </div>
+              <button type="submit" class="btn-submit">
+                <i class="fas fa-paper-plane"></i>
+                Envoyer le message
+              </button>
+              <div class="form-feedback" id="form-feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-logo">Amadou DEME</div>
+        <p class="footer-copy">
+          © 2026 Amadou DEME · Tous droits réservés · Sousse, Tunisie
+        </p>
+        <div class="footer-socials">
+          <a
+            href="mailto:demea2682@gmail.com"
+            class="footer-social-link"
+            title="Email"
+            aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a
+            href="tel:+221777880618"
+            class="footer-social-link"
+            title="Téléphone"
+            aria-label="Téléphone">
+            <i class="fas fa-phone"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/amadou-deme-8a7286324"
+            class="footer-social-link"
+            target="_blank"
+            rel="noopener"
+            title="LinkedIn"
+            aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/AmadouDEME"
+            class="footer-social-link"
+            target="_blank"
+            rel="noopener"
+            title="GitHub"
+            aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== BOUTON RETOUR EN HAUT ===== -->
+    <button id="back-top" aria-label="Retour en haut">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ===== MODAL APERÇU PROJET ===== -->
+    <div
+      id="project-modal"
+      class="project-modal"
+      aria-hidden="true"
+      role="dialog">
+      <div class="project-modal-box">
+        <button
+          class="project-modal-close"
+          id="modal-close"
+          aria-label="Fermer">
+          <i class="fas fa-times"></i>
+        </button>
+        <img
+          id="modal-img"
+          class="project-modal-img"
+          src=""
+          alt="Capture du projet" />
+        <div class="project-modal-content">
+          <div
+            id="modal-tags"
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              gap: 7px;
+              margin-bottom: 12px;
+            "></div>
+          <h3
+            id="modal-title"
+            style="
+              font-family: &quot;Space Grotesk&quot;, sans-serif;
+              font-size: 1.35rem;
+              font-weight: 700;
+              margin-bottom: 10px;
+              color: var(--text);
+            "></h3>
+          <p
+            id="modal-desc"
+            style="
+              font-size: 0.95rem;
+              color: var(--text-muted);
+              line-height: 1.75;
+              margin-bottom: 20px;
+            "></p>
+          <div
+            id="modal-links"
+            style="display: flex; gap: 14px; flex-wrap: wrap"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
